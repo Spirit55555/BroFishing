@@ -1,0 +1,19 @@
+main: dk.spirit55555.brofishing.BroFishing
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+author: riebie
+authors: [Spirit55555]
+website: http://dev.bukkit.org/bukkit-plugins/brofishing/
+permissions:
+  brofishing.*:
+    description: Gives access to all BroFishing permissions.
+    children:
+      brofishing.canfishbros: true
+      brofishing.nonfishable: true
+  brofishing.canfishbros:
+    description: Gives the player permission to fish other players.
+    default: true
+  brofishing.nonfishable:
+    description: Players with this permission cannot be fished by other players.
+    default: false
